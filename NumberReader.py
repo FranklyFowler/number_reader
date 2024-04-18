@@ -143,7 +143,7 @@ def main():
 def wait_for_file_save(file_path):
     initial_mtime = os.path.getmtime(file_path)
     print("Waiting for file to be saved...")
-    timeout = 300  # Set a timeout limit (e.g., 300 seconds or 5 minutes)
+    timeout = 300  # Set a timeout limit (5 minutes)
     start_time = time.time()
 
     while True:
